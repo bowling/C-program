@@ -5,9 +5,9 @@ using System.Drawing;
 
 /*
 Author: Michael Redbourne
-University: University of New Brunswick (Canada)
+<Removed>
 Language: C#
-Purpose: Exploit the \\FS-Home\Users folder to grab all folder names (user accounts).
+Purpose: Grab all usernames belonging to company <removed>
 */
 
 namespace DirectoryNames___Console
@@ -24,7 +24,7 @@ namespace DirectoryNames___Console
                 StreamWriter sw2 = new StreamWriter("H:/UnAppendedNames.txt");
                 foreach (DirectoryInfo dri in diArr)
                 {
-                    sw.WriteLine(dri.Name + "@unb.ca");
+                    sw.WriteLine(dri.Name + "@<Removed>");
                     sw2.WriteLine(dri.Name);
                 }
                 sw.Close();
